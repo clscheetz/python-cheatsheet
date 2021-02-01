@@ -1,22 +1,6 @@
 # python-cheatsheet
 
-This is some text.
-
-* item 1
-* item 2
-
-dfdf
-
-1. test
-1. test
-1. dfd
-
-```python
-myVar = 'test'
-print(myVar)
-```
-
-This is an example bit for `myVar = 'test` haha
+## Escape Characters
 
 |Code|Result|
 |----|-----|
@@ -24,3 +8,8 @@ This is an example bit for `myVar = 'test` haha
 | \\\\ |Backslash|
 |\n| New Line|
 |\r| Carriage Return|
+|\t| Tab|
+|\b| Backspace|
+|\f| Form Feed|
+|\ooo| Octal Value|
+|\xhh| Hex Value|
