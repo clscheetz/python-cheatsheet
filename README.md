@@ -21,6 +21,6 @@ This is an example bit for `myVar = 'test` haha
 |Code|Result|
 |----|-----|
 |\\'|Single Quote|
-|\\\\|Backslash|
+| \\\\ |Backslash|
 |\n| New Line|
 |\r| Carriage Return|
