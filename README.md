@@ -45,10 +45,16 @@ for index, value in enumerate(x):
 ```  
 Converts an iterable (list, tuple, string, etc) into an enumerated object, which contains a counter value. Essentially, it assigns a counter value (0, 1, 2, 3) to each value in the iterable. Can be used with a `for each` to get the index, as well as the value, in the sequence ([docs](https://www.w3schools.com/python/ref_func_enumerate.asp)).
 
-## dict.fromkeys() funtions
+## dict.fromkeys() funtion
 ```py
 mylist = ["a", "b", "a", "c", "c"]
 mylist = list(dict.fromkeys(mylist))
 print(mylist)
 ```
 The `dict.fromkeys()` reads every entry in the list and places them as keys in a returned dictionary. Any duplicate keys are ignored because dictionaries can't have duplicate keys.
+
+## map() function
+```py
+map(funtion, iterable)
+```
+The map function applies the given function to each item in the given iterable (list, tuple, dict, sets) and returns a map object (which is an iterator). Since it returns a map object, you may have to cast it to an iterable (list, set). Ex: `list(map(set, words))`
