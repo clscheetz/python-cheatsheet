@@ -1,5 +1,16 @@
 # python-cheatsheet
 
+## Lists, Sets, Tuples, Dictionaries
+A [list] is the simplest data structure, used to store a list of values. Lists are enclosed with [ ] and each item in the list has an assigned index. Lists are mutable (changeable) and each item in the list is serparated by a comma. 
+
+A (tuple) is a sequence of values, much like a list. They can store any data type, like lists, and are indexed by integers. It's important to remember that tuples are immutable (unable to be changed).
+
+Sets are unorderd and can be modified, but the elements contained in the set must be of an immutable type. Elements of a set are unique and duplicate elements are not allowed. They can perform mathematical set operations like union, intersection, symmetric difference, etc. 
+
+A {dictionary} is a collection of key-value pairs and you use [ ] to index over it. Separate the key and value with colons: and with commas, between each pair. Keys must be quoted, and you can print the dictionary by printing the reference to it. A dictionary maps a set of objects (keys) to another set of objects (values). Dictionaries are unordered and are muttable (changeable). 
+
+Both lists and dictionaries are mutable, dynamic, and can be nested. A list can contain another list. A dictionary can contain another dictionary. A dictionary can also contain a list, and vice versa. List elements are accessed by their position in the list, via indexing and dictionary elements are accessed vis keys. ([docs](https://medium.com/@nishantbhushan10/python-lists-tuples-sets-dictionary-a9cbcac183e3)).
+
 ## Escape Characters
 
 |Code|Result|
