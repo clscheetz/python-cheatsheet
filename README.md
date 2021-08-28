@@ -149,7 +149,7 @@ list(zip(a,b))
 ## List Comprehensions 
 Allows you to filter and transform ANY iterable into a list. You can iterate over an existing list, but it will create an entirely new list. 
 
-The conditional is evaluated first (optional) prior to the transformation. A list comprehension is essentially an in-line for loop. 
+The conditional is evaluated first (optional) prior to the transformation. A list comprehension is essentially an in-line for loop. ([docs](https://www.analyticsvidhya.com/blog/2021/08/everything-a-beginner-should-know-about-list-comprehension-in-python-before-starting-your-data-science-journeywith-examples/)).
 
 ```py
 #Using list comprehension, take a string & create a list making all characters capitalized and 
