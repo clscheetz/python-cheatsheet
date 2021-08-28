@@ -152,7 +152,8 @@ Allows you to filter and transform ANY iterable into a list. You can iterate ove
 The conditional is evaluated first (optional) prior to the transformation. A list comprehension is essentially an in-line for loop. 
 
 ```py
-#Using list comprehension, take a string & create a list making all characters capitalized and separated.
+#Using list comprehension, take a string & create a list making all characters capitalized and 
+#separated.
 
 myName = 'Chelsea'
 nameSeparated = [letter.upper() for letter in myName if letter != 'e']
@@ -161,7 +162,8 @@ print(nameSeparated)
 >>> ['C', 'H', 'L', 'S', 'A']
 ```
 ```py
-#Complete the function remove_all(L, x) so that, given a list L and a target value x, it returns a copy of the list that excludes all occurrences of x but preserves the order of the remaining elements.
+#Complete the function remove_all(L, x) so that, given a list L and a target value x, it returns a 
+#copy of the list that excludes all occurrences of x but preserves the order of the remaining elements.
 
  results = []
     for num in L:
