@@ -117,6 +117,12 @@ map(funtion, iterable)
 ```
 The map function applies the given function to each item in the given iterable (list, tuple, dict, sets) and returns a map object (which is an iterator). Since it returns a map object, you may have to cast it to an iterable (list, set). Ex: `list(map(set, words))`
 
+## `.remove()` method
+```py
+list.remove(element)
+```
+The remove method removes the FIRST matching element, which is passed as an argument, from the list. It will ONLY remove ONE element, which is the FIRST matching element. If you need to remove multiple of the same element, you will need to loop through the list. See the 2nd example under list comprehension down below. 
+
 ## `.format()` method
 The format method formats the specified value(s), inserts them inside the string's placeholder, and then returns the formatted string. The placeholder is defines using curly brackets{}. They can be named, numbered, or left empty.
 ```py
@@ -127,7 +133,7 @@ The format method formats the specified value(s), inserts them inside the string
 
 ## `f-strings` in Python
 
-## `zip()` function
+## `zip()` 
 The `zip()` funtion returns a zip object, which is an iterator of tuples where the first item in each passed iterator is paired together, and then the second items are paired, and so on...
 
 If the passed iterators have different lengths, the iterator with the fewest items decides the length of the new iterator.
@@ -138,4 +144,36 @@ b = ['a', 'b', 'c', 'd'] #see below that 'd' is left off
 list(zip(a,b))
 
 >>> [(1, 'a'), (2, 'b'), (3, 'c')]
+```
+
+## List Comprehensions 
+Allows you to filter and transform ANY iterable into a list. You can iterate over an existing list, but it will create an entirely new list. 
+
+The conditional is evaluated first (optional) prior to the transformation. A list comprehension is essentially an in-line for loop. 
+
+```py
+#Using list comprehension, take a string & create a list making all characters capitalized and separated.
+
+myName = 'Chelsea'
+nameSeparated = [letter.upper() for letter in myName if letter != 'e']
+print(nameSeparated)
+
+>>> ['C', 'H', 'L', 'S', 'A']
+```
+```py
+#Complete the function remove_all(L, x) so that, given a list L and a target value x, it returns a copy of the list that excludes all occurrences of x but preserves the order of the remaining elements.
+
+ results = []
+    for num in L:
+        if num != x:
+            results.append(num)
+    return results
+
+    #THE BETTER SOLUTION IS USING LIST COMPREHENSION***
+    
+[num for num in L if num != x]
+
+>>> Testing remove_all function: ([1, 2, 3, 2, 4, 8, 2], 2)...
+	True solution: [1, 3, 4, 8]
+	Your computed solution: [1, 3, 4, 8]
 ```
